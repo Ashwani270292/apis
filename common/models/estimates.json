@@ -1,0 +1,33 @@
+{
+  "name": "estimates",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "prices": {
+      "type": "hasMany",
+      "model": "price",
+      "foreignKey": "",
+      "through": "times"
+    },
+    "price": {
+      "type": "belongsTo",
+      "model": "price",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

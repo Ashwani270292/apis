@@ -1,0 +1,30 @@
+{
+  "name": "Location",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "currentPosition": {
+      "type": "geopoint",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "myProfiles": {
+      "type": "hasOne",
+      "model": "my_profile",
+      "foreignKey": ""
+    },
+    "name": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": "id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

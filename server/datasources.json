@@ -1,0 +1,22 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongodb": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "dgcab",
+    "name": "mongodb",
+    "connector": "mongodb"
+  },
+  "dgcab": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "dgcab",
+    "password": "",
+    "name": "dgcab",
+    "user": "",
+    "connector": "mongodb"
+  }
+}

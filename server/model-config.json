@@ -1,0 +1,89 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "products": {
+    "dataSource": "mongodb",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "price_details": {
+    "dataSource": "mongodb",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "newProducts": {
+    "dataSource": "mongodb",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "estimates": {
+    "dataSource": "mongodb",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "my_profile": {
+    "dataSource": "mongodb",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "request": {
+    "dataSource": "mongodb",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Subscriber": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Messages": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Admin": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Location": {
+    "dataSource": "mongodb",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  }
+}

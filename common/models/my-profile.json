@@ -1,0 +1,55 @@
+{
+  "name": "my_profile",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "first_name": {
+      "type": "string",
+      "required": true
+    },
+    "last_name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "picture": {
+      "type": "string"
+    },
+    "promo_code": {
+      "type": "string"
+    },
+    "mobile_verified": {
+      "type": "boolean",
+      "required": true
+    },
+    "uuid": {
+      "type": "string",
+      "id": true,
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "locations": {
+      "type": "hasOne",
+      "model": "Location",
+      "foreignKey": "location"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

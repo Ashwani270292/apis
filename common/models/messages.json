@@ -1,0 +1,26 @@
+{
+  "name": "Messages",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "MobileNumber": {
+      "type": "string",
+      "required": true
+    },
+    "User_id": {
+      "type": "object",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

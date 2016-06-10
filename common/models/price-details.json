@@ -1,0 +1,56 @@
+{
+  "name": "price_details",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "distance_unit": {
+      "type": "string",
+      "required": true
+    },
+    "currency_code": {
+      "type": "string",
+      "required": true
+    },
+    "service_fees": {
+      "type": [
+        "number"
+      ],
+      "required": false
+    },
+    "cost_per_minute": {
+      "type": "number",
+      "required": true
+    },
+    "minimum": {
+      "type": "number",
+      "required": true
+    },
+    "cost_per_distance": {
+      "type": "number",
+      "required": true
+    },
+    "cancellation_fee": {
+      "type": "number",
+      "required": true
+    },
+    "base": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}
