@@ -1,0 +1,42 @@
+{
+  "name": "driver",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "mobile": {
+      "type": "string"
+    },
+    "location": {
+      "type": "Location"
+    },
+    "cartype": {
+      "type": "string"
+    },
+    "isbooked": {
+      "type": "boolean"
+    },
+    "is_on_ride": {
+      "type": "boolean"
+    },
+    "name": {
+      "type": "string"
+    },
+    "photo": {
+      "type": "string"
+    },
+    "earned_amount": {
+      "type": "string"
+    },
+    "customer_mobile": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

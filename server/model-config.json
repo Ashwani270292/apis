@@ -76,11 +76,19 @@
     "dataSource": "mongodb",
     "public": true
   },
-  "Admin": {
-    "dataSource": "mongodb",
-    "public": true
-  },
   "Location": {
+    "dataSource": "mongodb",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "admin": {
+    "dataSource": "mongodb",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "driver": {
     "dataSource": "mongodb",
     "public": true,
     "$promise": {},

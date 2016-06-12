@@ -3,8 +3,8 @@ module.exports = function (Estimates) {
   
   var isStatic = true;
   Estimates.disableRemoteMethod('deleteById', isStatic);
-  Estimates.disableRemoteMethod('create', isStatic);
-  Estimates.disableRemoteMethod('upsert', isStatic);
+  // Estimates.disableRemoteMethod('create', isStatic);
+  // Estimates.disableRemoteMethod('upsert', isStatic);
   Estimates.disableRemoteMethod('exists', isStatic);
   Estimates.disableRemoteMethod('findById', isStatic);
   Estimates.disableRemoteMethod('find', isStatic);

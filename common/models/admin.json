@@ -1,12 +1,13 @@
 {
-  "name": "Admin",
-  "base": "Application",
-  "idInjection": true,
+  "name": "admin",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "Name": {
+    "FullName": {
       "type": "string"
     }
   },

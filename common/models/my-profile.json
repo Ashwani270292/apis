@@ -33,6 +33,12 @@
       "type": "string",
       "id": true,
       "required": true
+    },
+    "mobilenumber": {
+      "type": "string"
+    },
+    "location": {
+      "type": "Location"
     }
   },
   "validations": [],

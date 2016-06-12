@@ -7,9 +7,14 @@
     "validateUpsert": true
   },
   "properties": {
-    "currentPosition": {
-      "type": "geopoint",
-      "required": true
+    "latitude": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "string"
+    },
+    "mobile": {
+      "type": "string"
     }
   },
   "validations": [],
